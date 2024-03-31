@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_architecture/utils/utils.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key, required this.title});
 
-  final String title;
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _MyHomePageState();
@@ -12,7 +11,6 @@ class HomeScreen extends StatefulWidget {
 
 class _MyHomePageState extends State<HomeScreen> {
   int _counter = 0;
-
   void _incrementCounter() {
     setState(() {
       Utils.toastMessage("fjakfkja fadjf ajg fgj kj ",);
@@ -25,7 +23,7 @@ class _MyHomePageState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: const Text("Flutter Clean Architecture"),
       ),
       body: Center(
         child: Column(
