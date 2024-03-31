@@ -1,6 +1,6 @@
 # flutter_clean_architecture
 
-A new Flutter project.
+A new Flutter project with getx and basic utils and you can use this clean architecture for your own project.
 
 ## Getting Started
 
